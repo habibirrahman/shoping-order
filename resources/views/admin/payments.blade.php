@@ -61,7 +61,8 @@ Admin {{ $data['user']->name }}
                                 @php ($create = date("H:i, d M Y ", strtotime($payment->created_at)))
                                 <td>{{ $create }}</td>
                                 <td>{{ $payment->user->name }}</td>
-                                <td>Rp {{ $payment->order->price }}</td>
+                                @php ($p = number_format($payment->order->price))
+                                <td class="text-right"><strong>{{ $p }}</strong></td>
                                 <td>{{ $payment->type }}</td>
                                 <td class="text-center">
                                     @if ($payment->status == 'success')

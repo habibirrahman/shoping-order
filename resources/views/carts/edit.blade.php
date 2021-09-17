@@ -32,7 +32,8 @@
                                 </tr>
                                 <tr>
                                     <th>Harga</th>
-                                    <td>Rp {{ $data['cart']->product->price }}</td>
+                                    @php ($p = number_format($data['cart']->product->price))
+                                    <td>Rp {{ $p }}</td>
                                 </tr>
                                 <tr>
                                     <td colspan="2">
@@ -59,7 +60,8 @@
                         </div>
                         <div class="form-group">
                             <label for="price">Harga Produk</label>
-                            <input type="text" name="price" readonly value="{{ $data['cart']->product->price }}" class="form-control" id="price" />
+                            @php ($p = number_format($data['cart']->product->price))
+                            <input type="text" name="price" readonly value="{{ $p }}" class="form-control" id="price" />
                         </div>
                         <div class="form-row">
                             <div class="form-group col-md-6">

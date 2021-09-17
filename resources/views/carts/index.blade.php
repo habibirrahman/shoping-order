@@ -62,7 +62,8 @@
                                     <div class="form-check">
                                         <label class="form-check-label">
                                             <input name="{{ $i }}" class="form-check-input" type="checkbox" value="{{ $cart->id }}" checked>
-                                            <a data-toggle="collapse" class="collapsed" href="#accordion-list-{{ $i }}"><span>{{ $cart->amount }} pcs</span>{{ $cart->product->name }} : Rp {{ $cart->price }}<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                                            @php ($p = number_format($cart->price))
+                                            <a data-toggle="collapse" class="collapsed" href="#accordion-list-{{ $i }}"><span>{{ $cart->amount }} pcs</span>{{ $cart->product->name }} : Rp {{ $p }}<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
                                         </label>
                                     </div>
                                     <div id="accordion-list-{{ $i }}" class="collapsed mt-3 collapse" data-parent=".accordion-list">
@@ -74,7 +75,8 @@
                                             <div class="col-lg-7 mt-3 mt-lg-0">
                                                 <div class="form-group">
                                                     <label>Harga Produk</label>
-                                                    <input class="form-control" readonly value="{{ $cart->product->price }}" />
+                                                    @php ($p = number_format($cart->product->price))
+                                                    <input class="form-control" readonly value="{{ $p }}" />
                                                 </div>
                                                 <div class="form-row">
                                                     <div class="form-group col-md-6">
@@ -83,7 +85,8 @@
                                                     </div>
                                                     <div class="form-group col-md-6">
                                                         <label>Harga Total</label>
-                                                        <input class="form-control" readonly value="{{ $cart->price }}" />
+                                                        @php ($p = number_format($cart->price))
+                                                        <input class="form-control" readonly value="{{ $p }}" />
                                                     </div>
                                                 </div>
                                                 <p class="mt-2">

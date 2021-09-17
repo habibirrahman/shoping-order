@@ -87,7 +87,7 @@ class ProductController extends Controller
     {
         date_default_timezone_set('Asia/Jakarta');
         $product->delete();
-        Storage::disk('local')->delete('public/images/' . $product->file_path);
+        Storage::disk('local')->delete('public/images/' . $product->file_image);
         return redirect()
             ->route('products.index')
             ->with('success', $product->name . ' product were successfully removed');

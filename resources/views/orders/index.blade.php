@@ -91,9 +91,11 @@
                                                         <tr>
                                                             <th class="text-center">{{ $i }}</th>
                                                             <td>{{ $cart->product->name }}</td>
-                                                            <td class="text-right">{{ $cart->product->price }}</td>
+                                                            @php ($p = number_format($cart->product->price))
+                                                            <td class="text-right">{{ $p }}</td>
                                                             <td class="text-center">{{ $cart->amount }}</td>
-                                                            <td class="text-right">{{ $cart->price }}</td>
+                                                            @php ($p = number_format($cart->price))
+                                                            <td class="text-right">{{ $p }}</td>
                                                         </tr>
                                                         @php ($i += 1)
                                                         @endforeach
@@ -113,7 +115,8 @@
                                                                     </div>
                                                                 </div>
                                                             </td>
-                                                            <th class="text-right">{{ $order->price }}</th>
+                                                            @php ($p = number_format($order->price))
+                                                            <th class="text-right">{{ $p }}</th>
                                                         </tr>
                                                     </tfoot>
                                                 </table>

@@ -43,7 +43,8 @@
                         </div>
                         <div class="product-info">
                             <h4>{{ $product->name }}</h4>
-                            <p>Rp {{ $product->price }}</p>
+                            @php ($p = number_format($product->price))
+                            <p>Rp {{ $p }}</p>
                             <a class="venobox preview-link mr-2" href="{{ asset('/storage/images/'.$product->file_image) }}" title="{{ $product->description }}"><i class="fas fa-expand-arrows-alt"></i></a>
                             <a href="{{ route('carts.add', $product->slug) }}" class="details-link ml-2" title="Tambah Pesanan"><i class="fas fa-cart-plus"></i></a>
                             <!-- <a class="venobox preview-link" href="{{ asset('/storage/images/'.$product->file_image) }}" title="{{ $product->description }}"><i class="bx bx-expand-alt"></i></a>

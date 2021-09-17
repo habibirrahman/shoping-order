@@ -39,7 +39,8 @@
                                 </tr>
                                 <tr>
                                     <th>Harga</th>
-                                    <td>Rp {{ $data['product']->price }}</td>
+                                    @php ($p = number_format($data['product']->price))
+                                    <td>Rp {{ $p }}</td>
                                 </tr>
                                 <tr>
                                     <td colspan="2">
@@ -72,16 +73,18 @@
                         </div>
                         <div class="form-group">
                             <label for="price">Harga Produk</label>
-                            <input type="text" name="price" readonly value="{{ $data['product']->price }}" class="form-control" id="price" />
+                            @php ($p = number_format($data['product']->price))
+                            <input type="text" name="price" readonly value="{{ $p }}" class="form-control" id="price" />
                         </div>
                         <div class="form-row">
                             <div class="form-group col-md-6">
                                 <label for="amount">Jumlah Produk</label>
-                                <input onchange="calculate()" type="number" class="form-control" name="amount" id="amount" min="1" value="1" data-rule="minlen:1" data-msg="Please enter at least 1 item" required />
+                                <input onchange="calculate(placeholder)" type="number" placeholder="{{ $data['product']->price }}" class="form-control" name="amount" id="amount" min="1" value="1" required />
                             </div>
                             <div class="form-group col-md-6">
                                 <label for="cost">Total Harga</label>
-                                <input type="number" name="cost" readonly min="{{ $data['product']->price }}" value="{{ $data['product']->price }}" class="form-control" id="cost" />
+                                @php ($p = number_format($data['product']->price))
+                                <input type="text" name="cost" readonly min="{{ $data['product']->price }}" value="{{ $p }}" class="form-control" id="cost" />
                             </div>
                         </div>
                         <div class="text-center mt-2">
@@ -101,11 +104,11 @@
     <div id="preloader"></div>
 
     <script>
-        function calculate() {
+        function calculate(price) {
             var amount = parseInt(document.getElementById('amount').value);
-            var product_price = parseInt(document.getElementById('price').value);
-            var final_price = amount * product_price;
-            document.getElementById('cost').value = final_price;
+            var final_price = amount * price;
+            var final = new Number(final_price).toLocaleString("en-US");
+            document.getElementById('cost').value = final;
         }
     </script>
 </body>

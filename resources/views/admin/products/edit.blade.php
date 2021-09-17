@@ -56,7 +56,7 @@
                                 </select>
                             </div>
                             <div class="form-group">
-                                <label class="mb-1" for="file">Upload Gambar Produk</label>
+                                <label class="mb-1" for="file">Ganti Gambar Produk</label>
                                 <input class="form-control-file" id="file" name="file" type="file" value="{{ $data['product']->file_image }}" />
                             </div>
                         </div>

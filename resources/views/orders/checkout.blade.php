@@ -55,9 +55,11 @@
                             @foreach ($data['carts'] as $cart)
                             <tr>
                                 <td>{{ $cart->product->name }}</td>
-                                <td class="text-right">{{ $cart->product->price }}</td>
+                                @php ($p = number_format($cart->product->price))
+                                <td class="text-right">{{ $p }}</td>
                                 <td class="text-center">{{ $cart->amount }}</td>
-                                <td class="text-right">{{ $cart->price }}</td>
+                                @php ($p = number_format($cart->price))
+                                <td class="text-right">{{ $p }}</td>
                             </tr>
                             @php ($i += 1)
                             @endforeach
@@ -70,7 +72,8 @@
                                 <th></th>
                                 <th></th>
                                 <th class="text-left">Total</th>
-                                <th class="text-right">{{ $data['bill'] }}</th>
+                                @php ( $b = number_format($data['bill']))
+                                <th class="text-right">{{ $b }}</th>
                             </tr>
                         </table>
                     </div>
@@ -95,7 +98,8 @@
                         </div>
                         <div class="form-group">
                             <label for="bill">Total Harga</label>
-                            <input type="text" name="bill" readonly value="{{ $data['bill'] }}" class="form-control" id="bill" />
+                            @php ($b = number_format($data['bill']))
+                            <input type="text" name="bill" readonly value="{{ $b }}" class="form-control" id="bill" />
                         </div>
                         <div class="form-group">
                             <label for="date">Tanggal Pesanan</label>
@@ -122,14 +126,5 @@
     <a href="#" class="back-to-top"><i class="ri-arrow-up-line"></i></a>
     <div id="preloader"></div>
 </body>
-
-<script type="text/javascript">
-    function calculate() {
-        var amount = parseInt(document.getElementById('amount').value);
-        var product_price = parseInt(document.getElementById('product_price').value);
-        var final_price = amount * product_price;
-        document.getElementById('price').value = final_price;
-    }
-</script>
 
 </html>

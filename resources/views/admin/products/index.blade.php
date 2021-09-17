@@ -108,14 +108,15 @@ Admin {{ $data['user']->name }}
                             <tr>
                                 <td>{{ $product->name }} </td>
                                 <td>
-                                    <img src="{{ asset('/storage/images/1619093041-brownies-almond.jpg') }}" alt="{{ $product->file_image }}" width="120" />
+                                    <img src="{{ asset('/storage/images/'.$product->file_image) }}" alt="{{ $product->file_image }}" width="120" />
                                 </td>
                                 <td>{{ $product->description }}</td>
-                                <td class="text-right"><strong>{{ $product->price }}</strong></td>
-                                @if ($product->category_id == 0)
-                                <td>-</td>
-                                @else
+                                @php ($p = number_format($product->price))
+                                <td class="text-right"><strong>{{ $p }}</strong></td>
+                                @if ($product->category_id > 0)
                                 <td>{{ $product->category->name }}</td>
+                                @else
+                                <td>-</td>
                                 @endif
                                 <td class="text-center">
                                     <form action="{{ route('products.destroy', $product->id) }}" method="POST">

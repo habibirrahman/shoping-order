@@ -78,19 +78,19 @@ Admin {{ $data['user']->name }}
                                     <form action="{{ route('status.admin', ['id' => $order->id, 'status' => 'packaging']) }}" method="POST">
                                         @csrf
                                         <a target="_blank" href="https://wa.me/{{ $phone }}?text=Halo%20{{ $order->user->name }}%20...%0AKami%20dari%20Admin%20De%20Aroma" class="btn btn-secondary btn-sm">chat</a>
-                                        <button type="submit" class="btn btn-warning btn-sm" onclick="return confirm('Apakah Anda yakin ingin mengubah status pesanan no. {{ $order->id }} menjadi packaging?')">packaging</button>
+                                        <button type="submit" class="btn btn-warning btn-sm" onclick="return confirm('Apakah Anda yakin ingin mengubah status pesanan {{ $order->key_id }} menjadi packaging?')">packaging</button>
                                     </form>
                                     @elseif ($order->status == 'packaging')
                                     <form action="{{ route('status.admin', ['id' => $order->id, 'status' => 'siap']) }}" method="POST">
                                         @csrf
                                         <a target="_blank" href="https://wa.me/{{ $phone }}?text=Halo%20{{ $order->user->name }}%20...%0AKami%20dari%20Admin%20De%20Aroma" class="btn btn-secondary btn-sm">chat</a>
-                                        <button type="submit" class="btn btn-warning btn-sm" onclick="return confirm('Apakah Anda yakin ingin mengubah status pesanan no. {{ $order->id }} menjadi siap?')">siap</button>
+                                        <button type="submit" class="btn btn-warning btn-sm" onclick="return confirm('Apakah Anda yakin ingin mengubah status pesanan {{ $order->key_id }} menjadi siap?')">siap</button>
                                     </form>
                                     @elseif ($order->status == 'siap')
                                     <form action="{{ route('status.admin', ['id' => $order->id, 'status' => 'selesai']) }}" method="POST">
                                         @csrf
                                         <a target="_blank" href="https://wa.me/{{ $phone }}?text=Halo%20{{ $order->user->name }}%20...%0AKami%20dari%20Admin%20De%20Aroma" class="btn btn-secondary btn-sm">chat</a>
-                                        <button type="submit" class="btn btn-success btn-sm" onclick="return confirm('Apakah Anda yakin ingin mengubah status pesanan no. {{ $order->id }} menjadi selesai?')">diambil & selesai</button>
+                                        <button type="submit" class="btn btn-success btn-sm" onclick="return confirm('Apakah Anda yakin ingin mengubah status pesanan {{ $order->key_id }} menjadi selesai?')">diambil & selesai</button>
                                     </form>
                                     @else
                                     <a target="_blank" href="https://wa.me/{{ $phone }}?text=Halo%20{{ $order->user->name }}%20...%0AKami%20dari%20Admin%20De%20Aroma" class="btn btn-secondary btn-sm">chat</a>
