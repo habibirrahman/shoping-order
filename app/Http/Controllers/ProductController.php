@@ -100,7 +100,7 @@ class ProductController extends Controller
         $file = $request->file('file');
         $size = $file->getSize();
         $extension = $file->getClientOriginalExtension();
-        $file_name = time() . '-' . Str::slug($name, '-') . '.' . $extension;
+        $file_name = Str::slug($name, '-') . '.' . $extension;
         if ($extension == "png" || $extension == "jpg" || $extension == "jpeg") {
             if ($size <= 2048000) {
                 $file->storeAs('images', $file_name, 'public');
