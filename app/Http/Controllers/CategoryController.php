@@ -89,7 +89,7 @@ class CategoryController extends Controller
 
         if ($temp['products']) {
             return redirect()
-                ->route('category')
+                ->route('categories.index')
                 ->with('category-delete-failed', $temp);
         } else {
             $category->delete();
