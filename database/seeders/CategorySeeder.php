@@ -5,6 +5,7 @@ namespace Database\Seeders;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Str;
+use Illuminate\Support\Facades\Hash;
 
 class CategorySeeder extends Seeder
 {
@@ -22,5 +23,11 @@ class CategorySeeder extends Seeder
                 'slug' => Str::slug($category, '-')
             ]);
         }
+        DB::table('users')->insert([
+            'name' => 'Admin DA',
+            'email' => 'admin@gmail.com',
+            'password' => Hash::make('Admin123!'),
+            'role' => 1
+        ]);
     }
 }
