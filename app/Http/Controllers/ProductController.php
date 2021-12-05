@@ -87,7 +87,7 @@ class ProductController extends Controller
     {
         date_default_timezone_set('Asia/Jakarta');
         $product->delete();
-        Storage::disk('local')->delete('public/images/' . $product->file_image);
+        Storage::disk('public')->delete($product->file_image);
         return redirect()
             ->route('products.index')
             ->with('success', $product->name . ' product were successfully removed');
@@ -103,7 +103,7 @@ class ProductController extends Controller
         $file_name = Str::slug($name, '-') . '.' . $extension;
         if ($extension == "png" || $extension == "jpg" || $extension == "jpeg") {
             if ($size <= 2048000) {
-                $file->storeAs('images', $file_name, 'public');
+                Storage::disk('public')->put($file_name, file_get_contents($file));
             } else {
                 return redirect()
                     ->route('products.index')

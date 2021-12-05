@@ -69,7 +69,7 @@
                                     <div id="accordion-list-{{ $i }}" class="collapsed mt-3 collapse" data-parent=".accordion-list">
                                         <div class="row">
                                             <div class="col-lg-5">
-                                                <img class="rounded mx-auto d-block img-fluid" src="{{ asset('/storage/images/'.$cart->product->file_image) }}" alt="{{ $cart->product->slug }}" />
+                                                <img class="rounded mx-auto d-block img-fluid" src="{{ asset('/uploads/'.$cart->product->file_image) }}" alt="{{ $cart->product->slug }}" />
                                                 <p>{{ $cart->product->description }}</p>
                                             </div>
                                             <div class="col-lg-7 mt-3 mt-lg-0">

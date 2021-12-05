@@ -108,7 +108,7 @@ Admin {{ $data['user']->name }}
                             <tr>
                                 <td>{{ $product->name }} </td>
                                 <td>
-                                    <img src="{{ asset('/storage/images/'.$product->file_image) }}" alt="{{ $product->file_image }}" width="120" />
+                                    <img src="{{ asset('/uploads/'.$product->file_image) }}" alt="{{ $product->file_image }}" width="120" />
                                 </td>
                                 <td>{{ $product->description }}</td>
                                 @php ($p = number_format($product->price))

@@ -62,7 +62,7 @@
                         </div>
                         <div class="form-group col-md-6">
                             <div class="text-center">
-                                <img src="{{ asset('/storage/images/'.$data['product']->file_image) }}" alt="{{ $data['product']->file_image }}" height="150" />
+                                <img src="{{ asset('/uploads/'.$data['product']->file_image) }}" alt="{{ $data['product']->file_image }}" height="150" />
                             </div>
                         </div>
                     </div>

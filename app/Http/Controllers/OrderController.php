@@ -99,7 +99,7 @@ class OrderController extends Controller
                 'updated_at' => date('Y-m-d H:i:s')
             ]);
         }
-        $key_id = 'DA' . '/' . $user->id . '/' . $order_id  . '/' . $number . 'HERO';
+        $key_id = 'DA' . '/' . $user->id . '/' . $order_id  . '/' . $number . '/STAG';
 
         // set payment midtrans snap-redirect
         $this->initPaymentGateway();

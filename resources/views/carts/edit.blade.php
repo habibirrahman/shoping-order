@@ -24,7 +24,7 @@
                     <div class="info">
                         <h4 class="mb-4">{{ $data['cart']->product->name }}</h4>
                         <div class="row">
-                            <img class="rounded mx-auto d-block img-fluid" src="{{ asset('/storage/images/'.$data['cart']->product->file_image) }}" alt="{{ $data['cart']->product->slug }}" />
+                            <img class="rounded mx-auto d-block img-fluid" src="{{ asset('/uploads/'.$data['cart']->product->file_image) }}" alt="{{ $data['cart']->product->slug }}" />
                             <table class="table">
                                 <tr>
                                     <th>Kategori</th>

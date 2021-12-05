@@ -39,15 +39,15 @@
                     @foreach ($data['products'] as $product)
                     <div class="col-lg-3 col-md-4 product-item filter-{{ $product->category_id }}">
                         <div class="product-img">
-                            <img class="img-fluid" src="{{ asset('/storage/images/'.$product->file_image) }}" alt="{{ $product->slug }}">
+                            <img class="img-fluid" src="{{ asset('/uploads/'.$product->file_image) }}" alt="{{ $product->slug }}">
                         </div>
                         <div class="product-info">
                             <h4>{{ $product->name }}</h4>
                             @php ($p = number_format($product->price))
                             <p>Rp {{ $p }}</p>
-                            <a class="venobox preview-link mr-2" href="{{ asset('/storage/images/'.$product->file_image) }}" title="{{ $product->description }}"><i class="fas fa-expand-arrows-alt"></i></a>
+                            <a class="venobox preview-link mr-2" href="{{ asset('/uploads/'.$product->file_image) }}" title="{{ $product->description }}"><i class="fas fa-expand-arrows-alt"></i></a>
                             <a href="{{ route('carts.add', $product->slug) }}" class="details-link ml-2" title="Tambah Pesanan"><i class="fas fa-cart-plus"></i></a>
-                            <!-- <a class="venobox preview-link" href="{{ asset('/storage/images/'.$product->file_image) }}" title="{{ $product->description }}"><i class="bx bx-expand-alt"></i></a>
+                            <!-- <a class="venobox preview-link" href="{{ asset('/uploads/'.$product->file_image) }}" title="{{ $product->description }}"><i class="bx bx-expand-alt"></i></a>
                             <a href="{{ route('carts.add', $product->slug) }}" class="details-link" title="Tambah Pesanan"><i class="bx bx-plus"></i></a> -->
                         </div>
                     </div>
