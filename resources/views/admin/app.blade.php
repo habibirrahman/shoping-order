@@ -12,8 +12,8 @@
     <meta name="keywords" content="">
 
     <!-- Favicons -->
-    <link href="{{ asset('assets/img/dearoma.png') }}" rel="icon">
-    <link href="{{ asset('assets/img/dearoma.png') }}" rel="apple-touch-icon">
+    <link href="{{ asset('assets/img/my-bakery.png') }}" rel="icon">
+    <link href="{{ asset('assets/img/my-bakery.png') }}" rel="apple-touch-icon">
 
     <link href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css" rel="stylesheet" crossorigin="anonymous" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js" crossorigin="anonymous"></script>
@@ -24,7 +24,7 @@
 
 <body class="sb-nav-fixed">
     <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
-        <a class="navbar-brand" href="{{ route('products.index') }}">De Aroma Dashboard</a>
+        <a class="navbar-brand" href="{{ route('products.index') }}">My Bakery Dashboard</a>
         <button class="btn btn-link btn-sm order-1 order-lg-0" id="sidebarToggle" href="#"><i class="fas fa-bars"></i></button>
         <!-- Navbar Search-->
         <form class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0">
@@ -102,7 +102,7 @@
             <footer class="py-4 bg-light mt-auto">
                 <div class="container-fluid">
                     <div class="d-flex align-items-center justify-content-between small">
-                        <div class="text-muted">Copyright &copy; De Aroma 2021</div>
+                        <div class="text-muted">Copyright &copy; My Bakery 2021</div>
                         <div>
                             <a href="#">Privacy Policy</a>
                             &middot;

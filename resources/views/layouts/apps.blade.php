@@ -7,8 +7,8 @@
 <meta name="keywords" content="">
 
 <!-- Favicons -->
-<link href="{{ asset('assets/img/dearoma.png') }}" rel="icon">
-<link href="{{ asset('assets/img/dearoma.png') }}" rel="apple-touch-icon">
+<link href="{{ asset('assets/img/my-bakery.png') }}" rel="icon">
+<link href="{{ asset('assets/img/my-bakery.png') }}" rel="apple-touch-icon">
 
 <!-- Google Fonts -->
 <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">

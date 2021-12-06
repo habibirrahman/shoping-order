@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>De Aroma</title>
+    <title>My Bakery</title>
 
     <!-- Favicons -->
-    <link href="{{ asset('assets/img/dearoma.png') }}" rel="icon">
-    <link href="{{ asset('assets/img/dearoma.png') }}" rel="apple-touch-icon">
+    <link href="{{ asset('assets/img/my-bakery.png') }}" rel="icon">
+    <link href="{{ asset('assets/img/my-bakery.png') }}" rel="apple-touch-icon">
 
     <!-- Fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap">

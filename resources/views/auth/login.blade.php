@@ -3,7 +3,7 @@
         <h1></h1>
         <x-slot name="logo">
             <a name="Home" href="{{ route('home') }}">
-                <img src="{{ asset('assets/img/dearoma.png') }}" alt="dearoma-logo" width="250">
+                <img src="{{ asset('assets/img/my-bakery.png') }}" alt="my-bakery-logo" width="250">
                 <div hidden>Home</div>
             </a>
         </x-slot>

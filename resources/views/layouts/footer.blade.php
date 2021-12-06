@@ -4,14 +4,14 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-md-6 footer-contact">
-                    <h3>De Aroma Bakery & Cake</h3>
+                    <h3>My Bakery & Cake</h3>
                     <p>
                         Jl. Boulevard Soekarno<br>
                         Wonosari, Kemiri, Mojosongo, Boyolali, Jawa Tengah 57321<br>
                         Indonesia<br><br>
                         <strong>Telp&#9;:</strong> (0276) 322888<br>
                         <strong>Whatsapp&#9;:</strong> +62 858 6713 4588<br>
-                        <strong>Email&#9;:</strong> dearomabakery@gmail.com<br>
+                        <strong>Email&#9;:</strong> mybakery@gmail.com<br>
                     </p>
                 </div>
                 <div class="col-lg-6 col-md-6 footer-links">

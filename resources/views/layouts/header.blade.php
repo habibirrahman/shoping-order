@@ -1,10 +1,10 @@
 <!-- ======= Header ======= -->
 <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center">
-        <a name="Home" href="{{ route('home') }}"><img src="{{ asset('assets/img/dearoma.png') }}" width="100" alt="dearoma-logo"> </a>
+        <a name="Home" href="{{ route('home') }}"><img src="{{ asset('assets/img/my-bakery.png') }}" width="100" alt="my-bakery-logo"> </a>
         <h5 class="logo mr-auto ml-3">
             <a href="{{ route('home') }}">
-                de Aroma <br>
+                My Bakery <br>
                 Bakery and Cake
             </a>
         </h5>

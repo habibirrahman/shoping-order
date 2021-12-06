@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Pesanan - De Aroma</title>
+    <title>Pesanan - My Bakery</title>
     @include('layouts.apps')
 </head>
 
@@ -109,7 +109,7 @@
                                                             <td colspan="2">
                                                                 <div class="form-row m-0">
                                                                     <div class="form-group col mb-0">
-                                                                        <a target="_blank" class="btn btn-success text-white p-0" href="https://wa.me/6285234116872?text=Halo%20Admin%20De%20Aroma...%0ANama%20Saya%20{{$order->user->name}},%20Saya%20ingin%20bertanya%20mengenai%20pesanan%20saya%20untuk%20tanggal%20{{$for_date}},%20">
+                                                                        <a target="_blank" class="btn btn-success text-white p-0" href="https://wa.me/6285234116872?text=Halo%20Admin%20My%20Bakery...%0ANama%20Saya%20{{$order->user->name}},%20Saya%20ingin%20bertanya%20mengenai%20pesanan%20saya%20untuk%20tanggal%20{{$for_date}},%20">
                                                                             chat
                                                                         </a>
                                                                     </div>
@@ -140,7 +140,7 @@
                                 </tr>
                                 <tr>
                                     <th>siap</th>
-                                    <td>pesanan telah siap dan Pelanggan bisa mengambil pesanan di Toko Kue de Aroma</td>
+                                    <td>pesanan telah siap dan Pelanggan bisa mengambil pesanan di Toko Kue My Bakery</td>
                                 </tr>
                                 <tr>
                                     <th>selesai</th>

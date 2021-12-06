@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Beranda - De Aroma</title>
+    <title>Beranda - My Bakery</title>
     @include('layouts.apps')
 </head>
 
@@ -16,7 +16,7 @@
                     <h2>Kami menyediakan berbagai macam roti, kue, dan kue tart</h2>
                 </div>
                 <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
-                    <img src="{{ asset('assets/img/dearoma.png') }}" class="img-fluid animated" alt="dearoma-logo">
+                    <img src="{{ asset('assets/img/my-bakery.png') }}" class="img-fluid animated" alt="my-bakery-logo">
                 </div>
             </div>
         </div>
