@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Beranda - My Bakery</title>
+    <title>Beranda - De Tasty</title>
     @include('layouts.apps')
 </head>
 

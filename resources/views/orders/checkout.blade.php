@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Checkout - My Bakery</title>
+    <title>Checkout - De Tasty</title>
     @include('layouts.apps')
 </head>
 

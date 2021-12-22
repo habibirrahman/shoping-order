@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Pesanan - My Bakery</title>
+    <title>Pesanan - De Tasty</title>
     @include('layouts.apps')
 </head>
 
@@ -140,7 +140,7 @@
                                 </tr>
                                 <tr>
                                     <th>siap</th>
-                                    <td>pesanan telah siap dan Pelanggan bisa mengambil pesanan di Toko Kue My Bakery</td>
+                                    <td>pesanan telah siap dan Pelanggan bisa mengambil pesanan di Toko Kue De Tasty</td>
                                 </tr>
                                 <tr>
                                     <th>selesai</th>

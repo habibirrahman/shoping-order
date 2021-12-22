@@ -1,6 +1,6 @@
 @extends('admin.app')
 
-@section('title', 'Pelanggan My Bakery - Admin')
+@section('title', 'Pelanggan De Tasty - Admin')
 
 @section('user')
 Admin {{ $data['user']->name }}

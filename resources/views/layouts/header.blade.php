@@ -4,7 +4,7 @@
         <a name="Home" href="{{ route('home') }}"><img src="{{ asset('assets/img/my-bakery.png') }}" width="100" alt="my-bakery-logo"> </a>
         <h5 class="logo mr-auto ml-3">
             <a href="{{ route('home') }}">
-                My Bakery <br>
+                De Tasty <br>
                 Bakery and Cake
             </a>
         </h5>

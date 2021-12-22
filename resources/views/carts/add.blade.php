@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>{{ $data['product']->name }} - My Bakery</title>
+    <title>{{ $data['product']->name }} - De Tasty</title>
     @include('layouts.apps')
 </head>
 

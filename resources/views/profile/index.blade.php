@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Profile - My Bakery</title>
+    <title>Profile - De Tasty</title>
     @include('layouts.apps')
 </head>
 
@@ -11,7 +11,7 @@
     <!-- ======= Header ======= -->
     <header id="header" class="fixed-top">
         <div class="container d-flex align-items-center">
-            <h1 class="logo mr-auto"><a href="{{ route('home') }}">My Bakery</a></h1>
+            <h1 class="logo mr-auto"><a href="{{ route('home') }}">De Tasty</a></h1>
             <nav class="nav-menu d-none d-lg-block">
                 <ul>
                     <li><a href="#">My Order</a></li>
