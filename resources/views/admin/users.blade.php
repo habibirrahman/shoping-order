@@ -75,7 +75,7 @@ Admin {{ $data['user']->name }}
                                 </td>
                                 <th class="text-center">
                                     @php ($phone = substr_replace($user->phone,'62',0,0))
-                                    <a target="_blank" href="https://wa.me/{{ $phone }}?text=Halo%20{{ $user->name }}%20...%0AKami%20dari%20Admin%20My%20Bakery" type="submit" class="btn btn-secondary btn-sm">chat</a>
+                                    <a target="_blank" href="https://wa.me/{{ $phone }}?text=Halo%20{{ $user->name }}%20...%0AKami%20dari%20Admin%20De%20Tasty" type="submit" class="btn btn-secondary btn-sm">chat</a>
                                 </th>
                             </tr>
                             @endforeach
