@@ -4,7 +4,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-md-6 footer-contact">
-                    <h3>De Tasty & Cake</h3>
+                    <h3>De Tasty</h3>
                     <p>
                         Jl. Boulevard Soekarno<br>
                         Wonosari, Kemiri, Mojosongo, Boyolali, Jawa Tengah 57321<br>
