@@ -79,23 +79,23 @@ Admin {{ $data['user']->name }}
                                     @if ($order->status == 'produksi')
                                     <form action="{{ route('status.admin', ['id' => $order->id, 'status' => 'packaging']) }}" method="POST">
                                         @csrf
-                                        <a target="_blank" href="https://wa.me/{{ $phone }}?text=Halo%20{{ $order->user->name }}%20...%0AKami%20dari%20Admin%20De%20Tasty%0APesanan%20Anda%20pada%20tanggal%20{{ $order->for_date }}%20berupa%20{{ $order->all_cart }}sedang%20diproduksi" class="btn btn-secondary btn-sm">chat</a>
+                                        <a target="_blank" href="https://wa.me/{{ $phone }}?text=Halo%20{{ $order->user->name }}...%0AKami%20dari%20Admin%20De%20Tasty%0APesanan%20Anda%20pada%20tanggal%20{{ $order->for_date }}%20berupa%20{{ $order->all_cart }}sedang%20diproduksi" class="btn btn-secondary btn-sm">chat</a>
                                         <button type="submit" class="btn btn-warning btn-sm" onclick="return confirm('Apakah Anda yakin ingin mengubah status pesanan {{ $order->key_id }} menjadi packaging?')">packaging</button>
                                     </form>
                                     @elseif ($order->status == 'packaging')
                                     <form action="{{ route('status.admin', ['id' => $order->id, 'status' => 'siap']) }}" method="POST">
                                         @csrf
-                                        <a target="_blank" href="https://wa.me/{{ $phone }}?text=Halo%20{{ $order->user->name }}%20...%0AKami%20dari%20Admin%20De%20Tasty%0APesanan%20Anda%20pada%20tanggal%20{{ $order->for_date }}%20berupa%20{{ $order->all_cart }}sedang%20dipacking" class="btn btn-secondary btn-sm">chat</a>
+                                        <a target="_blank" href="https://wa.me/{{ $phone }}?text=Halo%20{{ $order->user->name }}...%0AKami%20dari%20Admin%20De%20Tasty%0APesanan%20Anda%20pada%20tanggal%20{{ $order->for_date }}%20berupa%20{{ $order->all_cart }}sedang%20dipacking" class="btn btn-secondary btn-sm">chat</a>
                                         <button type="submit" class="btn btn-warning btn-sm" onclick="return confirm('Apakah Anda yakin ingin mengubah status pesanan {{ $order->key_id }} menjadi siap?')">siap</button>
                                     </form>
                                     @elseif ($order->status == 'siap')
                                     <form action="{{ route('status.admin', ['id' => $order->id, 'status' => 'selesai']) }}" method="POST">
                                         @csrf
-                                        <a target="_blank" href="https://wa.me/{{ $phone }}?text=Halo%20{{ $order->user->name }}%20...%0AKami%20dari%20Admin%20De%20Tasty%0APesanan%20Anda%20pada%20tanggal%20{{ $order->for_date }}%20berupa%20{{ $order->all_cart }}telah%20siap%20dan%20dapat%20diambil" class="btn btn-secondary btn-sm">chat</a>
+                                        <a target="_blank" href="https://wa.me/{{ $phone }}?text=Halo%20{{ $order->user->name }}...%0AKami%20dari%20Admin%20De%20Tasty%0APesanan%20Anda%20pada%20tanggal%20{{ $order->for_date }}%20berupa%20{{ $order->all_cart }}telah%20siap%20dan%20dapat%20diambil" class="btn btn-secondary btn-sm">chat</a>
                                         <button type="submit" class="btn btn-success btn-sm" onclick="return confirm('Apakah Anda yakin ingin mengubah status pesanan {{ $order->key_id }} menjadi selesai?')">diambil & selesai</button>
                                     </form>
                                     @else
-                                    <a target="_blank" href="https://wa.me/{{ $phone }}?text=Halo%20{{ $order->user->name }}%20...%0AKami%20dari%20Admin%20De%20Tasty%0APesanan%20Anda%20pada%20tanggal%20{{ $order->for_date }}%20berupa%20{{ $order->all_cart }}telah%20diambil%20oleh..." class="btn btn-secondary btn-sm">chat</a>
+                                    <a target="_blank" href="https://wa.me/{{ $phone }}?text=Halo%20{{ $order->user->name }}...%0AKami%20dari%20Admin%20De%20Tasty%0APesanan%20Anda%20pada%20tanggal%20{{ $order->for_date }}%20berupa%20{{ $order->all_cart }}telah%20diambil%20oleh..." class="btn btn-secondary btn-sm">chat</a>
                                     @endif
                                 </td>
                             </tr>
